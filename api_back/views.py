@@ -52,7 +52,7 @@ class PermissionViewSet(viewsets.ModelViewSet):
 
 
 class GetGroupViewSet(viewsets.ModelViewSet):
-    queryset = Group.objects.filter(name__group=)
+    queryset = Group.objects.all()
     serializer_class = GroupSerializer
     http_method_names = ['get']
     # pagination_class = CustomPagination
